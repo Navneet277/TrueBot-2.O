@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: truebot
+    env: python
+    runtime: python3
+    pythonVersion: 3.11.9
+    buildCommand: |
+      pip install -r requirements.txt &&
+      python -m nltk.downloader stopwords wordnet punkt &&
+      python scripts/prepare_dataset.py &&
+      python -m modules.train_model &&
+      python scripts/init_db.py
+    startCommand: gunicorn app:app
