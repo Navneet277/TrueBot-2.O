@@ -50,6 +50,7 @@ python tests/evaluate_model.py
 ## Deployment
 
 - Use `gunicorn app:app` on Render/Railway.
+- Use following link :  https://truebot-2-o.onrender.com
 - Set environment variables:
   - `SECRET_KEY`
   - `PORT` (if required by platform)
