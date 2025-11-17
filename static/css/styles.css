@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #1f3c88;
+  --accent-color: #ff6b6b;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --bg-light: #f7f9fc;
+}
+
+body {
+  background-color: var(--bg-light);
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.hero {
+  padding: 4rem 0;
+}
+
+.result-card {
+  border-left: 6px solid var(--primary-color);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.card-fake {
+  border-left-color: var(--danger-color);
+}
+
+.card-real {
+  border-left-color: var(--success-color);
+}
+
+.navbar-brand span {
+  font-weight: 700;
+}
+
+

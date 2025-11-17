@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold">TrueBot – Fake News Detection</h1>
+      <p class="lead">
+        Upload or paste any headline or paragraph and TrueBot will classify it
+        as real or fake using TF-IDF and ensemble machine learning.
+      </p>
+      <div class="mt-4">
+        <a href="{{ url_for('detect') }}" class="btn btn-primary btn-lg me-2">
+          Detect News
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">System Highlights</h5>
+          <ul class="list-unstyled mb-0">
+            <li>✔ TF-IDF vectorization + ML ensemble</li>
+            <li>✔ Color-coded insights with confidence</li>
+            <li>✔ Training dataset covering common rumor patterns</li>
+            <li>✔ SQLite history of classroom experiments</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+

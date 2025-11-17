@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+  <div class="col-lg-8">
+    <h2>About TrueBot</h2>
+    <p>
+      TrueBot is a fake news detection project that combines
+      modern NLP preprocessing, TF-IDF features, and ensemble machine learning
+      to provide clear fake/real predictions with confidence scores.
+    </p>
+    <h4>Tech Stack</h4>
+    <ul>
+      <li>Flask + Bootstrap responsive UI</li>
+      <li>TF-IDF vectorization with Logistic Regression / Random Forest</li>
+      <li>Curated synthetic dataset covering popular rumor themes</li>
+      <li>SQLite for history tracking</li>
+    </ul>
+  </div>
+  <div class="col-lg-4">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5>Team</h5>
+        <p>AI Engineering</p>
+        <ul class="list-unstyled">
+          <li>Data Science Lead</li>
+          <li>Full-Stack Engineer</li>
+          <li>Product Designer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+

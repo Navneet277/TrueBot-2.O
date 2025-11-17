@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <div class="card result-card {% if prediction.label == 'Real' %}card-real{% else %}card-fake{% endif %}">
+      <div class="card-body">
+        <h3>Prediction Result</h3>
+        <p class="text-muted">Confidence: {{ prediction.confidence }}%</p>
+        <div class="alert {% if prediction.label == 'Real' %}alert-success{% else %}alert-danger{% endif %}">
+          {{ prediction.label }}
+        </div>
+        <h5>Original Text</h5>
+        <p>{{ text }}</p>
+        <a href="{{ url_for('detect') }}" class="btn btn-link">Analyze another</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
