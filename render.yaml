@@ -4,7 +4,7 @@ services:
     env: python
     runtime: python3
     pythonVersion: 3.11.9
-    buildCommand: |
+    buildCommand: >
       pip install -r requirements.txt &&
       python -m nltk.downloader stopwords wordnet punkt &&
       python scripts/prepare_dataset.py &&
